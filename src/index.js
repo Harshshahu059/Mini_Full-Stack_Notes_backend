@@ -14,7 +14,11 @@ connectDB();
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: process.env.Cors }
+  cors: {
+    origin: process.env.Cors,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], 
+    credentials: true
+  }
 });
 setSocket(io);
 
