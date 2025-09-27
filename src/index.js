@@ -22,15 +22,11 @@ const io = new Server(server, {
 });
 setSocket(io);
 
-app.use(cors({
-  origin: process.env.Cors,
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
-app.use("/api/notes", noteRoutes);
+app.use("/api/notes", noteRoutes); 
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
