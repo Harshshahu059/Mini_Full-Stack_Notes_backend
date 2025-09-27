@@ -19,7 +19,7 @@ It provides secure REST APIs for authentication and notes management, with **JWT
 ### 1️⃣ Clone the Repository
 
 git clone https://github.com/your-username/mini-notes-app.git
-cd mini-notes-app/backend
+
 
 ### 2️⃣ Install Dependencies
  npm install
@@ -35,4 +35,5 @@ npm run dev
 
 ### Server will start on:
 👉 http://localhost:5000
+
 
